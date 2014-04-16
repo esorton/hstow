@@ -1,0 +1,26 @@
+#/bin/sh
+##############################################################################
+#
+# hstow - Stows home directory.
+#
+##############################################################################
+
+# NOTE: .stow can't exist in ${HOME}; stow treats it as a protected directory
+# and refuses to soft-link any files.  Therefore, HSTOWDIR can't be .stow.
+HSTOWDIR=${HOME}/.hstow
+
+# HSTODIR should exist.
+if [ ! -d ${HSTOWDIR} ] ; then
+	echo "$0: Strange, ${HSTOWDIR} does not exist or is not a directory."
+	exit 1
+fi
+
+# We don't use the --dir command line argument as stow gets confused and uses
+# the wrong relative directory if HSTOWDIR isn't the realpath.
+cd ${HSTOWDIR}
+
+stow --verbose *
+
+##############################################################################
+# vim: syntax=zsh
+##############################################################################
