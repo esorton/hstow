@@ -10,7 +10,8 @@ Quick start instructions:
     % git clone https://github.com/esorton/hstow.git
     % ./hstow/bin/hstow
 
-Be sure `${HOME}/bin` is in your path so your shell can find `hstow`.
+As `hstow` is stowed in `${HOME}/bin`, full path to script is not required
+after the initial stow as long as `${HOME}/bin` is in the current path.
 
 Checkout additional repositories within `${HOME}/.hstow` and/or create
 additional subdirectories with files to be stowed.  Run `hstow` to create the
