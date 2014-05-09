@@ -7,7 +7,7 @@ Quick start instructions:
 
     % cd ${HOME}
     % mkdir .hstow
-    % git co https://github.com/esorton/hstow.git
+    % git clone https://github.com/esorton/hstow.git
     % ./hstow/bin/hstow
 
 Be sure `${HOME}/bin` is in your path so your shell can find `hstow`.
