@@ -10,7 +10,7 @@ Quick start instructions:
     % cd .hstow
     % git clone https://github.com/esorton/hstow.git
     % cd ${HOME}
-    % ./.hstow/bin/hstow
+    % ./.hstow/hstow/bin/hstow
 
 As `hstow` is stowed in `${HOME}/bin`, full path to script is not required
 after the initial stow as long as `${HOME}/bin` is in the current path.
