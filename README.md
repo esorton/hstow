@@ -19,7 +19,11 @@ Checkout additional repositories within `${HOME}/.hstow` and/or create
 additional subdirectories with files to be stowed.  Run `hstow` to create the
 necessary soft links or to update things change.
 
-`stow` utility must be installed on the host computer.
-
 List files to ignore in `.stow-local-ignore` file in root of repository.
 
+`stow` utility must be installed on the host computer.  On Debian based
+distributions, install with `apt-get`:
+
+    % sudo apt-get install stow
+
+`stow` source can be obtained at https://www.gnu.org/software/stow/.
